@@ -1,5 +1,12 @@
 pipeline:
+  build_debian:
+    image: plugins/docker
+    repo: jellyfin/jellyfin
+    dry_run: true
+    dockerfile: Dockerfile.debian
+
   build:
     image: plugins/docker
     repo: jellyfin/jellyfin
     dry_run: true
+    dockerfile: Dockerfile
