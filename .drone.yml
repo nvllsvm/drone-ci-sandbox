@@ -1,0 +1,5 @@
+pipeline:
+  build:
+    image: plugins/docker
+    repo: jellyfin/jellyfin
+    dry_run: true
